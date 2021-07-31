@@ -267,7 +267,10 @@ for p,eta_p,s,eta_s in iter(D):
 
 
 
-这个文章带来的启发是，在进行伪造数据时，如果使用的是神经网络伪造的数据，不能过于割裂伪造数据部分和生成部分。
+最后总结一下这片文章对我的启发
+
++ 利用神经网络生成数据的时候，可以把两个阶段连结起来，联合训练。
++ 在证明自己方法有效时，可以使用t-SNE可视化生成结果
 
 
 
@@ -277,5 +280,4 @@ for p,eta_p,s,eta_s in iter(D):
 
 # 其他趣事
 
-1. 在论文3.2.1中作者说”All parts of our framework are trained jointly from scratch“，这里我理解为，我们框架的所有部分都是联合训练的从scratch。scratch是什么呢？我百度查阅到，scratch是一个少儿图形化编程工具。。。
 2. 在论文4.1.1中，作者说我们训练我们的模型在三个数据集上：Scribble数据集，SketchyCOCO数据集。。。”We train our model on three datasets: Scribble(10 classes), and SketchyCOCO(14 classes of objects).“。是我数错了吗？
